@@ -1,0 +1,18 @@
+variables:
+  port:
+    env: PORT
+    type: int
+    value: 8080
+  user:
+    env: ADMIN_USERNAME
+    value: "admin"
+    type: string
+  password:
+    env: ADMIN_PASSWORD
+    value: "not-set"
+    type: string
+
+services:
+  webserver:
+    port: 8080
+    protocol: tcp
